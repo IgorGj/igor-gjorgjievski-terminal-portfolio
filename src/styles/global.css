@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Hack';
+  src: url(/assets/fonts/Hack-NF.ttf);
+  display: swap;
+}
+
+* {
+  font-family: 'Hack', monospace;
+}
+
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e252e;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ebdbb2;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8037;
+}
+
+.name {
+  font-size: 30px;
+}
+
+.container-name {
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .name {
+    font-size: 8px;
+  }
+  .container-name {
+    flex-direction: column;
+  }
+  body, html, *{
+    overflow-x: clip !important;
+  }
+  div#__next > div {
+    overflow-x: hidden;
+  }
+}
+* {
+  max-width: 100% !important;
+}
+.my-name{
+  font-size:15px
+}
+@media screen and (max-width: 1150px) {
+  .my-name{
+    font-size:12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .my-name{
+    font-size:5px;
+    margin-top: 15px;
+  }
+}
