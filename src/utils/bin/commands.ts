@@ -36,9 +36,13 @@ export const repo = async (args: string[]): Promise<string> => {
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my portfolio!
-More about me:
+  return `  
+  👋 Hi, I am ${config.name}, a passionate front-end developer specializing in HTML, CSS, JavaScript, jQuery, React, and Vue. I'm dedicated to creating captivating landing pages and ensuring the smooth operation of admin panels.
+
+  💼 With a knack for translating ideas into pixel-perfect designs, I excel at crafting user-friendly interfaces that drive engagement. My expertise extends to troubleshooting and optimizing performance for seamless user experiences.
+  
+  🚀 I thrive on staying current with industry trends and emerging technologies, consistently delivering high-quality solutions. Let's connect to discuss exciting opportunities and collaborate on web projects that leave a lasting impression.
+  
 'sumfetch' - short summary.
 'resume' - my latest resume.
 `;

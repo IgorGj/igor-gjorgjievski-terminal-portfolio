@@ -66,6 +66,9 @@ div#__next > div {
 .my-name{
   font-size:15px
 }
+.prompt-style{
+  flex-shrink: 0;
+}
 @media screen and (max-width: 1150px) {
   .my-name{
     font-size:12px;

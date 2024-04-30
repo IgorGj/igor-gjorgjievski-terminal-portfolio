@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 const { colors } = require('./config.json');
-
+const { gruvbox ,dracula, Nord,Monokai, Mocha,Solarized,Paraiso} = require('./themes.json')
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
@@ -11,7 +11,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      ...colors,
+      ...Solarized
     },
     extend: {},
   },
